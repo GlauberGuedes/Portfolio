@@ -1,0 +1,328 @@
+* {
+box-sizing: border-box;
+margin: 0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #585151;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: #585151; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #131212;
+    border-radius: 5px;
+  }
+  
+
+body {
+    min-height: 100vh;
+    color: white;
+    background-image: linear-gradient(to top, #505a52 0%, #000000 100%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, #505a52 0%, #000000 100%);
+    display: grid;
+    place-content: center;
+    margin-bottom: auto;
+    height: 70px;
+    box-shadow: 0 0 5px 0 black;
+}
+
+nav {
+    display: grid;
+    grid-auto-flow:column;
+    gap: 30px;
+}
+
+nav a{
+    all: unset;
+    cursor: pointer;
+    color: white;
+}
+
+nav a:hover{
+    color: rgb(110, 106, 106);
+}
+
+.pagina1 {
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+
+.pagina1 a {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 10px 15px;
+}
+
+.pagina2 {
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.sobre {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.sobre h2 {
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.foto img {   
+    border-radius: 50%;
+}
+
+.sobre-conteudo {
+    max-width: 700px;
+}
+
+
+.habilidades-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.habilidades-conteudo {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.elemento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    min-width: 100px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.521);
+    box-shadow: 0 0 5px 0 white;
+}
+
+.elemento i {
+    font-size: 30px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contatos a {
+    background-color: rgba(0, 0, 0, 0.521);
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.pagina3 {
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagina3 h2 {
+    padding-top: 80px;
+}
+
+.projetos {
+    display: flex;
+    max-width: 100vw;
+    padding: 5px 0 5px 0;
+    gap: 40px;
+    overflow-x:auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background-image: linear-gradient(to top, #3f4641 0%, #000000 100%);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 black;
+    max-width: 300px;
+}
+
+.card :last-child {
+    margin-bottom: 10px;
+}
+
+.card img {
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+}
+
+.card p {
+    text-align: center;
+}
+
+footer {
+    font-family:'Times New Roman', Times, serif;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, #505a52 0%, #1b1919 100%);
+    box-shadow: 0 0 5px 0 black;
+} 
+
+.email-telefone{
+    display: flex;
+}
+
+.icone {
+    display: flex;
+    margin-right: 30px;
+}
+
+.icone p{
+    margin-left: 15px;
+}
+
+@media (max-width: 812px) {
+    .pagina1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nome {
+        margin-bottom: 50px;
+    }
+    .pagina2 {
+        justify-content: space-around;
+    }
+    .sobre{
+        padding: 80px 15px 0 15px;
+    }
+    .sobre-conteudo {
+        margin-left: 20px;
+        text-align: center;
+    }
+    .pagina3 {
+        justify-content: space-between;
+    }
+    footer{
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .nome {
+        text-align: center;
+    }
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 90px;
+    }
+
+    .sobre img {
+        margin-bottom: 10px;
+    }
+
+    .sobre-conteudo {
+        text-align: center;
+    }
+
+    .habilidades-titulo {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .habilidades-conteudo {
+        overflow-x: auto;
+        gap: 0;
+        justify-content: flex-start;
+    }
+
+    .elemento {
+        margin-left: 10px;
+    }
+    .contato {
+        gap: 0;
+    }
+    
+    .contatos {
+        gap: 0;
+        margin-top: 10px;
+    }
+    .contatos a{
+        margin-left: 15px;
+    }
+    .icone {
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+    }
+}
