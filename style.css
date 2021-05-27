@@ -26,7 +26,7 @@ body {
     min-height: 100vh;
     color: white;
     background-image: linear-gradient(to top, #505a52 0%, #000000 100%);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -130,7 +130,8 @@ a{
 .habilidades-conteudo {
     display: flex;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
 }
 
 .elemento {
@@ -220,7 +221,6 @@ a{
 }
 
 footer {
-    font-family:'Times New Roman', Times, serif;
     width: 100%;
     padding: 10px;
     display: flex;
@@ -260,6 +260,9 @@ footer {
     .sobre-conteudo {
         margin-left: 20px;
         text-align: center;
+    }
+    .habilidades-conteudo {
+        overflow-x: auto;
     }
     .pagina3 {
         justify-content: space-between;
