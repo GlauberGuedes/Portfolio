@@ -131,7 +131,6 @@ a{
     display: flex;
     gap: 20px;
     justify-content: center;
-    gap: 40px;
 }
 
 .elemento {
@@ -272,7 +271,7 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 412px) {
 
     .nome {
         text-align: center;
@@ -298,6 +297,15 @@ footer {
         text-align: center;
     }
 
+    .sobre-conteudo p {
+        font-size: 14px;
+    }
+
+    .foto img{
+        width: 150px;
+        height: 150px;
+    }
+
     .habilidades-titulo {
         margin-top: 15px;
         margin-bottom: 15px;
@@ -311,7 +319,18 @@ footer {
 
     .elemento {
         margin-left: 10px;
+        height: 50px;
+        min-width: 65px;
     }
+
+    .elemento i {
+        font-size: 20px;
+    }
+
+    .elemento p {
+        font-size: 14px;
+    }
+    
     .contato {
         gap: 0;
     }
