@@ -27,6 +27,8 @@ body {
     color: white;
     background-image: linear-gradient(to top, #505a52 0%, #000000 100%);
     font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .header {
@@ -190,7 +192,7 @@ a{
 .projetos {
     display: flex;
     max-width: 100vw;
-    padding: 5px 0 5px 0;
+    padding: 5px 20px 5px 20px;
     gap: 40px;
     overflow-x:auto;
 }
@@ -203,7 +205,7 @@ a{
     background-image: linear-gradient(to top, #3f4641 0%, #000000 100%);
     border-radius: 5px;
     box-shadow: 0 0 10px 0 black;
-    max-width: 300px;
+    max-width: 330px;
 }
 
 .card :last-child {
